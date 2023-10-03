@@ -119,7 +119,7 @@ class Dice {
     }
   }
   void hide() {
-    fill((int)(Math.random()*100), 0, 0, 50);
+    fill(255, 0, 0, 50);
     rect(150, 150, 200, 200, 50);
   }
 }
