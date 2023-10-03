@@ -15,7 +15,7 @@ void draw() {
   int go = one.five;
   int roku = one.six;
   for (int j = 25; j < 500; j+=50) {
-    for (int i = 25; i < 500; i+=50) { 
+    for (int i = 25; i < 500; i+=50) {
         one = new Dice(i, j);
         one.roll();
         one.show();
@@ -27,7 +27,7 @@ void draw() {
         go = go + one.five;
         roku = roku + one.six;
     }
-  }
+    }
   System.out.println(total);
   textAlign(CENTER);
   fill(255);
