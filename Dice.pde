@@ -32,7 +32,6 @@ void draw() {
       }
     }
   }
-  text(total);
   textAlign(CENTER);
   fill(255);
   text("Total: " + total, 250, 200);
