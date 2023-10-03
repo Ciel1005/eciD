@@ -1,4 +1,3 @@
-//Demon Dice
 Dice one;
 void setup() {
   size(500, 500);
@@ -26,11 +25,14 @@ void draw() {
         one.show();
         total = total + one.dot;
         ichi = ichi + one.uno;
-        ni = ni + one.two;
-        san = san + one.three;
-        shi = shi + one.four;
-        go = go + one.five;
-        roku = roku + one.six;
+        ni= ni+ one.uno;
+        san =
+          ichi = ichi + one.uno;
+        ni = ni + one.uno;
+        san = san + one.uno;
+        shi = shi + one.uno;
+        go = go + one.uno;
+        roku = roku + one.uno;
       }
     }
   }
@@ -38,12 +40,12 @@ void draw() {
   textAlign(CENTER);
   fill(255);
   text("Total: " + total, 250, 200);
-  text("ones: " + ichi, 215, 225);
-  text("twos: " + ni, 215, 250);
-  text("threes: " + san, 215, 275);
-  text("fours: " + shi, 285, 225);
-  text("fives: " + go, 285, 250);
-  text("sixs: " + roku, 285, 275);
+  text("ones: " + ichi, 225, 225);
+  text("twos: " + ni, 225, 250);
+  text("threes: " + san, 225, 275);
+  text("fours: " + shi, 275, 225);
+  text("fives: " + go, 275, 250);
+  text("sixs: " + roku, 275, 275);
 }
 
 void mousePressed() {
@@ -79,7 +81,7 @@ class Dice {
     noStroke();
     while (diam > 0) {
       fill(r, r, r);
-      rect(myX-25, myY-25, diam, diam, 60);
+      rect(myX-25, myY-25, diam, diam, 40);
       diam--;
       r--;
     }
@@ -120,7 +122,7 @@ class Dice {
     }
   }
   void hide() {
-    fill(255, 0, 0, 50);
-    rect(150, 150, 200, 200, 50);
+    fill((int)(Math.random()*100), 0, 0);
+    rect(150, 150, 200, 200, 20+(int)(Math.random()*500));
   }
 }
