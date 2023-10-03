@@ -15,10 +15,7 @@ void draw() {
   int go = one.five;
   int roku = one.six;
   for (int j = 25; j < 500; j+=50) {
-    for (int i = 25; i < 500; i+=50) {
-      if (i >= 150 && i <= 350 && j >= 150 && j <= 350) {
-        one.hide();
-      } else {
+    for (int i = 25; i < 500; i+=50) { 
         one = new Dice(i, j);
         one.roll();
         one.show();
@@ -29,7 +26,6 @@ void draw() {
         shi = shi + one.four;
         go = go + one.five;
         roku = roku + one.six;
-      }
     }
   }
   System.out.println(total);
@@ -117,8 +113,5 @@ class Dice {
       six++;
     }
   }
-  void hide() {
-    fill((int)(Math.random()*100), 0, 0);
-    rect(150, 150, 200, 200, 20+(int)(Math.random()*500));
-  }
+
 }
