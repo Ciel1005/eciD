@@ -24,14 +24,11 @@ void draw() {
         one.show();
         total = total + one.dot;
         ichi = ichi + one.uno;
-        ni= ni+ one.uno;
-        san =
-          ichi = ichi + one.uno;
-        ni = ni + one.uno;
-        san = san + one.uno;
-        shi = shi + one.uno;
-        go = go + one.uno;
-        roku = roku + one.uno;
+        ni = ni + one.two;
+        san = san + one.three;
+        shi = shi + one.four;
+        go = go + one.five;
+        roku = roku + one.six;
       }
     }
   }
